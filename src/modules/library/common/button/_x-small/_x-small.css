@@ -1,0 +1,9 @@
+.button_x-small {
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+
+    font-size: 60%;
+    line-height: 60%;
+}
