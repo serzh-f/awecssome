@@ -1,0 +1,14 @@
+.button_ghost {
+    background: transparent;
+
+    &:hover,
+    &focus {
+        border-color: $btn-color-hover;
+        background-color: transparent;
+    }
+
+    &:active {
+        border-color: $btn-color-active;
+        background-color: transparent;
+    }
+}

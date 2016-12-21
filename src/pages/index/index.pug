@@ -1,2 +1,21 @@
 extends ../layout.pug
 block content
+        include ../../modules/library/common/button/button.pug
+        include ../../modules/library/common/button/button-link.pug
+        +button('button_x-large', 'button', 'x-large')
+        +button('button_large', 'button', 'large')
+        +button('', 'button', 'default')
+        +button('button_small', 'button', 'small')
+        +button('button_x-small', 'button', 'x-small')
+        br
+        +button('button_x-large button_ghost', 'button', 'x-large')
+        +button('button_large button_ghost', 'button', 'large')
+        +button('button_ghost', 'button', 'default')
+        +button('button_small button_ghost', 'button', 'small')
+        +button('button_x-small button_ghost', 'button', 'x-small')
+        br
+        +button-link('button_x-large', '#', 'x-large')
+        +button-link('button_large', '#', 'large')
+        +button-link('', '#', 'default')
+        +button-link('button_small', '#', 'small')
+        +button-link('button_x-small', '#', 'x-small')
