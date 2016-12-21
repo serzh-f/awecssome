@@ -1,0 +1,39 @@
+/* COLORS */
+
+$color1: red;
+$color2: green;
+$color3: blue;
+
+$btn-color: #dad8e1;
+$btn-color-hover: #b2b2b2;
+$btn-color-active: #959292;
+
+$text-color: rgb(0, 0, 0);
+$link-color: rgb(0, 0, 255);
+
+/* TYPOGRAPHY */
+
+$font-family: Arial;
+$font-size: 16px;
+
+
+
+$font-family-sans-serif:;
+$font-family-serif:;
+$font-family-monospace:;
+$font-family-base:;
+$font-size-base:;
+$font-size-large:;
+$font-size-small:;
+$font-size-h1:;
+$font-size-h2:;
+$font-size-h3:;
+$font-size-h4:;
+$font-size-h5:;
+$font-size-h6:;
+$line-height-base:;
+$line-height-computed:;
+$headings-font-family:;
+$headings-font-weight:;
+$headings-line-height:;
+$headings-color:;
