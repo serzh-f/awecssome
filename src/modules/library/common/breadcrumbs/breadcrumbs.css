@@ -1,0 +1,17 @@
+.breadcrumbs {
+    all: unset;
+    display: flex;
+    color: blue;
+
+    &__item {
+        margin-right: 30px;
+        color: red;
+
+        &:not(:last-child)::after {
+            content: "->";
+        }
+    }
+    &__link {
+        text-decoration: none;
+    }
+}
