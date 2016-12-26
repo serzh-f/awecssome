@@ -20,7 +20,7 @@
         }
 
         & .product-card__title {
-            font-size: 18px;
+            font-size: 120%;
         }
 
         & .product-card__description {

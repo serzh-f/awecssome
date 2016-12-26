@@ -1,9 +1,7 @@
 .product-card {
-    all: unset;
-    min-height: 200px;
     padding: 20px;
     display: flex;
-    background: rgb(220, 220, 220);
+    background: rgb(240, 240, 240);
 
     &__additionally {
         margin-right: 20px;
@@ -11,9 +9,12 @@
     }
 
         &__image {
+            width: 200px;
+            height: 200px;
             display: block;
+            overflow: hidden;
             object-fit: cover;
-            background: rgb(210, 210, 210);
+            background: rgb(220, 220, 220);
         }
 
     &__wrapper {
@@ -27,13 +28,13 @@
         }
 
             &__title {
-                margin-top: 0;
                 margin-bottom: 20px;
-                font-size: 26px;
+                display: block;
+                font-weight: bold;
+                font-size: 160%;
             }
 
             &__description {
-                margin-top: 0;
                 margin-bottom: 20px;
             }
 
@@ -45,5 +46,6 @@
                 display: block;
                 margin-bottom: 20px;
                 font-weight: bold;
+                font-size: 120%;
             }
 }
