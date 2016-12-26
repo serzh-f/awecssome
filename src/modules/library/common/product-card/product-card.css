@@ -1,0 +1,51 @@
+.product-card {
+    padding: 20px;
+    display: flex;
+    background: rgb(240, 240, 240);
+
+    &__additionally {
+        margin-right: 20px;
+        flex-basis: 200px;
+    }
+
+        &__image {
+            width: 200px;
+            height: 200px;
+            display: block;
+            overflow: hidden;
+            object-fit: cover;
+            background: rgb(220, 220, 220);
+        }
+
+    &__wrapper {
+        display: flex;
+        flex-grow: 1;
+    }
+
+        &__info {
+            margin-right: 20px;
+            flex-grow: 1;
+        }
+
+            &__title {
+                margin-bottom: 20px;
+                display: block;
+                font-weight: bold;
+                font-size: 160%;
+            }
+
+            &__description {
+                margin-bottom: 20px;
+            }
+
+        &__purchase {
+            flex-basis: 200px;
+        }
+
+            &__price {
+                display: block;
+                margin-bottom: 20px;
+                font-weight: bold;
+                font-size: 120%;
+            }
+}
