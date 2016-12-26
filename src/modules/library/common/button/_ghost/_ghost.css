@@ -1,4 +1,5 @@
 .button_ghost {
+    color: $btn-color-hover;
     background: transparent;
 
     &:hover,

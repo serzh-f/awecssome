@@ -20,6 +20,9 @@ block content
         +button-link('button_small', '#', 'small')
         +button-link('button_x-small', '#', 'x-small')
         br
+        include ../../modules/library/common/breadcrumbs/breadcrumbs.pug
+        +breadcrumbs({lastOne:false})
+        br
         include ../../modules/library/common/product-card/product-card.pug
         +product-card('')
         br
