@@ -1,0 +1,13 @@
+mixin product-card(mode)
+    .product-card(class=mode)
+        .product-card__additionally
+            img(width="200", height="200", alt="Очень длинное название товара").product-card__image
+        .product-card__wrapper
+            .product-card__info
+                h2.product-card__title
+                    a(href="#").product-card__title-link Очень длинное название товара
+                p.product-card__description Продукт, как принято считать, синхронизирует потребительский рынок. Как предсказывают футурологи каждая сфера рынка раскручивает креативный PR. Контент, согласно Ф.Котлеру, транслирует бренд. Партисипативное планирование, отбрасывая подробности, определяет conversion rate.
+            .product-card__purchase
+                span.product-card__price 9999,99
+                    span.product-card__currency &nbsp;руб.
+                +button('', 'button', 'В корзину')
