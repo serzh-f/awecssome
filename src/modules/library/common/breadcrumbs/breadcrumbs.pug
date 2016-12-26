@@ -1,7 +1,11 @@
-ul(class="breadcrumbs")
-    li(class="breadcrumbs__item")
-        a(class="breadcrumbs__link", href="#") Index
-    li(class="breadcrumbs__item")
-        a(class="breadcrumbs__link", href="#") Category
-    li(class="breadcrumbs__item")
-        a(class="breadcrumbs__link") Subcategory
+mixin breadcrumbs(options)
+    - var lastOne = options && options.lastOne ? true : false
+    - var incomplete = lastOne ? '' : 'breadcrumbs_incomplete'
+    ul(class="breadcrumbs "+incomplete)
+        li(class="breadcrumbs__item")
+            a(class="breadcrumbs__link", href="#") Index
+        li(class="breadcrumbs__item")
+            a(class="breadcrumbs__link", href="#") Category
+        if lastOne
+            li(class="breadcrumbs__item") Subcategory
+        else

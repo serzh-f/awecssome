@@ -1,17 +1,21 @@
 .breadcrumbs {
     all: unset;
     display: flex;
-    color: blue;
+    color: inherit;
 
     &__item {
-        margin-right: 30px;
-        color: red;
+        position: relative;
+        list-style: none;
+        color: inherit;
 
         &:not(:last-child)::after {
-            content: "->";
+            content: "→";
+            margin-left: 10px;
+            margin-right: 10px;
+            float: right;
         }
     }
     &__link {
-        text-decoration: none;
+        color: inherit;
     }
 }

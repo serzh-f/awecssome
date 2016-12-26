@@ -1,0 +1,6 @@
+.breadcrumbs_incomplete .breadcrumbs__item:last-child::after {
+    content: "→";
+    margin-left: 10px;
+    margin-right: 10px;
+    float: right;
+}
