@@ -8,3 +8,5 @@ import './modules/library/common/button/_x-small/_x-small.css';
 import './modules/library/common/button/_ghost/_ghost.css';
 
 import './modules/library/common/product-card/product-card.css';
+import './modules/library/common/product-card/_mixed/_mixed.css';
+import './modules/library/common/product-card/_vertical/_vertical.css';

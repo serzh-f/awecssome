@@ -1,0 +1,34 @@
+.product-card_vertical {
+    max-width: 200px;
+    max-height: 350px;
+    flex-flow: column;
+
+    & .product-card__additionally {
+        margin-right: 0;
+        margin-bottom: 20px;
+        flex-basis: 200px;
+    }
+
+    & .product-card__wrapper {
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+        & .product-card__info {
+            margin-right: 0;
+            flex-basis: auto;
+        }
+
+        & .product-card__title {
+            font-size: 18px;
+        }
+
+        & .product-card__description {
+            display: none;
+        }
+
+        & .product-card__purchase {
+            margin-right: 0;
+            flex-basis: 50px;
+        }
+}
