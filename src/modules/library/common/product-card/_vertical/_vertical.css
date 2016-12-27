@@ -1,6 +1,6 @@
 .product-card_vertical {
     max-width: 200px;
-    max-height: 350px;
+    max-height: 400px;
     flex-flow: column;
 
     & .product-card__additionally {
