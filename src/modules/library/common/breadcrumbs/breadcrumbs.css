@@ -1,12 +1,8 @@
 .breadcrumbs {
-    all: unset;
     display: flex;
-    color: inherit;
 
     &__item {
         position: relative;
-        list-style: none;
-        color: inherit;
 
         &:not(:last-child)::after {
             content: "→";
@@ -15,7 +11,19 @@
             float: right;
         }
     }
+
     &__link {
-        color: inherit;
+        cursor: pointer;
+
+        &:link,
+        &:visited,
+        &:active {
+            text-decoration: underline;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
     }
 }
