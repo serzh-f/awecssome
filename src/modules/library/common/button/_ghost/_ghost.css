@@ -1,15 +1,18 @@
 .button_ghost {
-    color: $btn-color-hover;
+    color: rgb(220, 220, 220);
     background: transparent;
 
-    &:hover,
-    &focus {
-        border-color: $btn-color-hover;
+    &:link,
+    &:visited,
+    &:active {
+        border-color: rgb(220, 220, 220);
         background-color: transparent;
     }
 
-    &:active {
-        border-color: $btn-color-active;
+    &:hover,
+    &:focus {
+        border-color: rgb(200, 200, 200);
+        color: rgb(200, 200, 200);
         background-color: transparent;
     }
 }

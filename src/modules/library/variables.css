@@ -1,8 +1,8 @@
 /* COLORS */
 
-$btn-color: #dad8e1;
-$btn-color-hover: #b2b2b2;
-$btn-color-active: #959292;
+$btn-color: rgb(220, 220, 220);
+$btn-color-hover: rgb(200, 200, 200);
+$btn-color-active: rgb(200, 200, 200);
 
 /* TYPOGRAPHY */
 
