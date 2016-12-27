@@ -1,10 +1,9 @@
 @import url("../../variables.css");
 
 .button {
-    all: unset;
     border-width: 1px;
     border-style: solid;
-    border-color: $btn-color;
+    border-color: rgb(220, 220, 220);
     border-radius: 2px;
     padding-top: 10px;
     padding-right: 20px;
@@ -13,25 +12,26 @@
     display: inline-block;
     position: relative;
     font-weight: normal;
-    font-size: 100%;
     line-height: 100%;
     font-family: inherit;
     text-align: center;
     white-space: nowrap;
-    color: #fff;
-    background-color: $btn-color;
+    background-color: rgb(220, 220, 220);
     user-select: none;
 
-    &:hover,
-    &focus {
-        border-color: $btn-color-hover;
-        background-color: $btn-color-hover;
+    &:link,
+    &:visited,
+    &:active {
+        border-color: rgb(220, 220, 220);
+        background-color: rgb(220, 220, 220);
     }
 
-    &:active {
-        border-color: $btn-color-active;
-        background-color: $btn-color-active;
+    &:hover,
+    &:focus {
+        border-color: rgb(200, 200, 200);
+        background-color: rgb(200, 200, 200);
     }
+
 
     ::-moz-focus-inner {
         padding: 0;
