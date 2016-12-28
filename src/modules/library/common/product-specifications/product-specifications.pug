@@ -1,9 +1,9 @@
 
 
-mixin product-specifications(quantity, caption, args)
+mixin product-specifications(mode, quantity, caption, args)
     - var n = 0;
     while n++ < quantity
-        table.product-specifications
+        table.product-specifications(class="product-specifications_"+mode)
             caption.product-specifications__title= caption
             tbody.product-specifications__main
             each val, index in args
