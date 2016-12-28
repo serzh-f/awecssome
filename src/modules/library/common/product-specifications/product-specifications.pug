@@ -1,0 +1,13 @@
+
+
+mixin product-specifications(quantity, caption, args)
+    - var n = 0;
+    while n++ < quantity
+        table.product-specifications
+            caption.product-specifications__title= caption
+            tbody.product-specifications__main
+            each val, index in args
+                tr.product-specifications__item
+                    td.product-specifications__item-name
+                        span.product-specifications__item-name-mask= index
+                    td.product-specifications__item-value= val
