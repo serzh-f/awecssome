@@ -1,0 +1,15 @@
+.product-specifications_lines {
+
+    & .product-specifications__item {
+        padding-bottom: 10px;
+        
+        &:hover {
+            color: inherit;
+            background-color: rgb(240, 240, 240);
+
+            & .product-specifications__item-name-mask {
+                background-color: rgb(240, 240, 240);
+            }
+        }
+    }
+}

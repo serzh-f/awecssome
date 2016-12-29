@@ -1,0 +1,18 @@
+mixin product-specifications(mode, quantity, hint, caption, items)
+    - var cl = ' product-specifications'
+    - var md = mode ? cl + "_" + mode : '';
+    - var ht = hint == 'left' ?  cl + "_" + 'hint' : '';
+    - var n = 0;
+    while n++ < quantity
+        table(class=cl+ht)
+            caption.product-specifications__title= caption
+            tbody.product-specifications__main
+                each val, index in items
+                    tr.product-specifications__item
+                        td.product-specifications__item-name
+                            span.product-specifications__item-name-mask= index
+                                if hint
+                                    .product-specifications__hint(class="product-specifications__hint_"+hint) &#xfffd;
+                                        .product-specifications__hint-content
+                                            .product-specifications__hint-wrapper Функция многих переменных, очевидно, естественно уравновешивает интеграл по поверхности. График функции многих переменных доказан.
+                        td.product-specifications__item-value= val

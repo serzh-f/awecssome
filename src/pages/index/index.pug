@@ -30,3 +30,7 @@ block content
         +product-card('product-card_mixed')
         br
         +product-card('product-card_vertical')
+        br
+        include ../../modules/library/common/product-specifications/product-specifications.pug
+        +product-specifications('dots', 2, 'left', 'Группа характеристик', {'Короткая характеристика':'5"', 'Характеристика':'черный','Самая длинная из существующих характеристика':'4 ядра'})
+        +product-specifications('lines', 2, 'right', 'Группа характеристик', {'Короткая характеристика':'5"', 'Характеристика':'черный','Самая длинная из существующих характеристика':'4 ядра'})

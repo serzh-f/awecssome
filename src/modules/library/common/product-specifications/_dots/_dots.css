@@ -1,0 +1,13 @@
+.product-specifications_dots {
+
+    & .product-specifications__item-name {
+
+        &::after {
+            width: 100%;
+            padding-right: 10px;
+            content: "";
+            border-bottom: 1px dotted currentColor;
+            display: block;
+        }
+    }
+}
