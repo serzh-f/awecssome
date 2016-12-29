@@ -18,3 +18,7 @@ import './modules/library/common/product-card/_vertical/_vertical.css';
 import './modules/library/common/product-specifications/product-specifications.css';
 import './modules/library/common/product-specifications/_dots/_dots.css';
 import './modules/library/common/product-specifications/_lines/_lines.css';
+import './modules/library/common/product-specifications/_hint/_hint.css';
+import './modules/library/common/product-specifications/_hint/_hint_left.css';
+import './modules/library/common/product-specifications/_hint/_hint_right.css';
+import './modules/library/common/product-specifications/__hint/__hint.css';
