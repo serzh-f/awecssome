@@ -1,0 +1,13 @@
+.form-item_column {
+    flex-flow: column;
+}
+.form-item_column .form-item__label {
+    padding-bottom: 10px;
+}
+.form-item_column .form-item__wrapper {
+    flex-flow: column;
+}
+.form-item_column .form-item__message {
+    padding-top: 10px;
+    padding-left: 0;
+}
