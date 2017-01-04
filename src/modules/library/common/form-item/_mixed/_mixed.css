@@ -1,7 +1,6 @@
 .form-item_mixed .form-item__wrapper {
     flex-flow: column;
 }
-
 .form-item_mixed .form-item__message {
     padding-top: 10px;
     padding-left: 0;
