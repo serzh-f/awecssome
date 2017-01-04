@@ -22,3 +22,9 @@ import './modules/library/common/product-specifications/_hint/_hint.css';
 import './modules/library/common/product-specifications/_hint/_hint_left.css';
 import './modules/library/common/product-specifications/_hint/_hint_right.css';
 import './modules/library/common/product-specifications/__hint/__hint.css';
+
+import './modules/library/common/form-item/form-item.css';
+import './modules/library/common/form-item/__input/__input.css';
+import './modules/library/common/form-item/__label/__label.css';
+import './modules/library/common/form-item/__message/__message.css';
+import './modules/library/common/form-item/__wrapper/__wrapper.css';

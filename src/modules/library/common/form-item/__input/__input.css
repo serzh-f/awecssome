@@ -1,0 +1,30 @@
+.form-item__input {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(220, 220, 220);
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+
+    &:active {
+        border-color: rgb(220, 220, 220);
+    }
+
+    &:hover,
+    &:focus {
+        border-color: rgb(200, 200, 200);
+    }
+
+    &:disabled {
+        background: rgb(220, 220, 220);
+        cursor: not-allowed;
+    }
+
+    &:read-only {
+        cursor: default;
+    }
+}

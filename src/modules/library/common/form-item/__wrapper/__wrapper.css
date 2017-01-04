@@ -1,0 +1,4 @@
+.form-item__wrapper {
+    display: flex;
+    align-items: baseline;
+}
