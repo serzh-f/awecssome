@@ -3,6 +3,7 @@
 }
 .form-item_column .form-item__label {
     padding-bottom: 10px;
+    flex-basis: auto;
 }
 .form-item_column .form-item__wrapper {
     flex-flow: column;

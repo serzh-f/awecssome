@@ -6,6 +6,7 @@
     padding-right: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    appearance: textfield;
     display: inline-block;
     position: relative;
     background-color: rgb(255, 255, 255);
@@ -26,5 +27,13 @@
 
     &:read-only {
         cursor: default;
+    }
+
+    &:invalid {
+        border-color: rgb(255, 0, 0);
+    }
+
+    &:valid {
+        border-color: rgb(0, 255, 0);
     }
 }

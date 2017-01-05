@@ -1,17 +1,61 @@
 .form-item
     label.form-item__label(for="1") Название поля
     .form-item__wrapper
-        input.form-item__input(id="1" type="text" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" value="")
-        .form-item__message Текстовое сообщение
+        input.form-item__input(id="1" type="text" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" value="" required)
+        .form-item__message Сообщение об ошибке с описанием
 br
 .form-item.form-item_mixed
     label.form-item__label(for="1") Название поля
     .form-item__wrapper
-        input.form-item__input(id="1" type="text" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" value="")
-        .form-item__message Текстовое сообщение
+        input.form-item__input(id="1" type="text" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" value="" required)
+        .form-item__message Сообщение об ошибке с описанием
 br
 .form-item.form-item_column
     label.form-item__label(for="1") Название поля
     .form-item__wrapper
-        input.form-item__input(id="1" type="text" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" value="")
-        .form-item__message Текстовое сообщение
+        input.form-item__input(id="1" type="text" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" value="" required)
+        .form-item__message Сообщение об ошибке с описанием
+br
+form(action="https://echo.htmlacademy.ru", method="post")
+    .form-item
+        label.form-item__label(for="1") Текстовое поле
+        .form-item__wrapper
+            input.form-item__input(id="1" type="text" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" required)
+            .form-item__message Сообщение об ошибке с описанием
+    br
+    .form-item
+        label.form-item__label(for="1") Числовое поле
+        .form-item__wrapper
+            input.form-item__input(id="1" type="number" name="text" placeholder="placeholder" min="" max="" pattern="" required)
+            .form-item__message Сообщение об ошибке с описанием
+    br
+    .form-item
+        label.form-item__label(for="1") Поле email
+        .form-item__wrapper
+            input.form-item__input(id="1" type="email" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" required)
+            .form-item__message Сообщение об ошибке с описанием
+    br
+    .form-item
+        label.form-item__label(for="1") Поле пароль
+        .form-item__wrapper
+            input.form-item__input(id="1" type="password" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" required)
+            .form-item__message Сообщение об ошибке с описанием
+    br
+    .form-item
+        label.form-item__label(for="1") Поле поиска
+        .form-item__wrapper
+            input.form-item__input(id="1" type="search" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" required)
+            .form-item__message Сообщение об ошибке с описанием
+    br
+    .form-item
+        label.form-item__label(for="1") Поле URL
+        .form-item__wrapper
+            input.form-item__input(id="1" type="url" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" required)
+            .form-item__message Сообщение об ошибке с описанием
+    br
+    .form-item
+        label.form-item__label(for="1") Поле телефон
+        .form-item__wrapper
+            input.form-item__input(id="1" type="url" name="text" placeholder="placeholder" minlength="" maxlength="" pattern="" required)
+            .form-item__message Сообщение об ошибке с описанием
+    button(type="submit") Отправить
