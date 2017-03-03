@@ -9,7 +9,7 @@ var HtmlPlugin = require('html-webpack-plugin');
 var precss = require('precss');
 var autoprefixer = require('autoprefixer');
 
-var pages = ['index'];
+var pages = ['index', 'news'];
 
 module.exports = {
     entry: {

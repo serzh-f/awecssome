@@ -1,0 +1,55 @@
+.news-card {
+  display: flex;
+  background: rgb(240, 240, 240);
+  padding: 20px;
+
+  &__additionally {
+    margin-right: 20px;
+  }
+
+  &__img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  &__date {
+    width: 100%;
+    display: block;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 160%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__wrapper {
+
+  }
+
+  &__view {
+    padding: 0 0 0 20px;
+    color: #828385;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    float: right;
+    &:before {
+      content: "";
+      background: #9aabab;
+      width: 19px;
+      height: 12px;
+      display: block;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+

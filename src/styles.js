@@ -22,3 +22,8 @@ import './modules/library/common/product-specifications/_hint/_hint.css';
 import './modules/library/common/product-specifications/_hint/_hint_left.css';
 import './modules/library/common/product-specifications/_hint/_hint_right.css';
 import './modules/library/common/product-specifications/__hint/__hint.css';
+
+
+import './modules/library/common/news-card/news-card.css';
+import './modules/library/common/news-card/_vertical/_vertical.css';
+import './modules/library/common/news-card/_right-img/_right-img.css';

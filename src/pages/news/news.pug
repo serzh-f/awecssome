@@ -1,0 +1,14 @@
+extends ../layout.pug
+block content
+        div(style="font-size: 18px; font-weight: bold; padding: 30px; display: block;") Default Mode
+        include ../../modules/library/common/news-card/news-card.pug
+        +news-card('')
+        br
+        div(style="font-size: 18px; font-weight: bold; padding: 30px; display: block;") Vertical Mode
+        br
+        +news-card('news-card_vertical')
+        br
+        div(style="font-size: 18px; font-weight: bold; padding: 30px; display: block;") Right Image Mode
+        br
+        +news-card('news-card_right-img')
+        br

@@ -1,0 +1,30 @@
+.news-card_vertical {
+  flex-flow: column;
+  width: 100%;
+  min-width: 210px;
+  max-width: 260px;
+  max-height: 400px;
+
+  & .news-card__additionally {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  & .news-card__img {
+    width: 100%;
+  }
+
+  & .news-card__title {
+    font-size: 120%;
+  }
+
+  & .news-card__description {
+    color: #2b3345;
+    font-size: 16px;
+    font-weight: 400;
+    height: 39px;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+}
+

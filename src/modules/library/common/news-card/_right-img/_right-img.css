@@ -1,0 +1,18 @@
+.news-card_right-img {
+
+  & .news-card__additionally {
+    order: 2;
+    margin-right: 0;
+    margin-left: 20px;
+
+  }
+
+  & .news-card__wrapper {
+    order: 1;
+  }
+
+  & .news-card__view {
+    float: left;
+  }
+}
+
