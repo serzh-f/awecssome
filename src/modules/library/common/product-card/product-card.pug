@@ -1,13 +1,13 @@
 mixin product-card(mode)
-    article.product-card(class=mode)
+    article.product-card(class=mode itemscope itemtype="http://schema.org/Product")
         .product-card__additionally
-            img(src="/", width="200", height="200", alt="Очень длинное название товара").product-card__image
+            img(itemprop="image" src="/", width="200", height="200", alt="Очень длинное название товара").product-card__image
         .product-card__wrapper
             .product-card__info
-                h2.product-card__title
+                h2.product-card__title(itemprop="name")
                     a(href="#").product-card__title-link Очень длинное название товара
-                p.product-card__description Продукт, как принято считать, синхронизирует потребительский рынок. Как предсказывают футурологи каждая сфера рынка раскручивает креативный PR. Контент, согласно Ф.Котлеру, транслирует бренд. Партисипативное планирование, отбрасывая подробности, определяет conversion rate.
-            .product-card__purchase
-                span.product-card__price 9999,99
-                    span.product-card__currency &nbsp;руб.
+                p.product-card__description(itemprop="description")  Продукт, как принято считать, синхронизирует потребительский рынок. Как предсказывают футурологи каждая сфера рынка раскручивает креативный PR. Контент, согласно Ф.Котлеру, транслирует бренд. Партисипативное планирование, отбрасывая подробности, определяет conversion rate.
+            .product-card__purchase(itemprop="offers" itemscope itemtype="http://schema.org/Offer")
+                span.product-card__price(itemprop="price" content="9999.99") 9999,99
+                    span.product-card__currency(itemprop="priceCurrency" content="USD") &nbsp;руб.
                 +button('', 'button', 'В корзину')
