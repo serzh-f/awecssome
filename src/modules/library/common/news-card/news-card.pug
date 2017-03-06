@@ -7,5 +7,6 @@ mixin news-card(mode)
             h2.news-card__title(itemprop="name")
                 a.news-card__link.news-card__title-link(href='#') Скидки акции и прочее. Рассрочка 3 года
             p.news-card__description(itemprop="description") Продукт, как принято считать, синхронизирует потребительский рынок. Как предсказывают футурологи каждая сфера рынка раскручивает креативный PR. Контент, согласно Ф.Котлеру, транслирует бренд. Партисипативное планирование, отбрасывая подробности, определяет conversion rate.
-            span.news-card__view 123
+            .news-card__stat(itemscope itemtype="http://schema.org/InteractionCounter")
+                span.news-card__view(itemprop="userInteractionCount" content="123") 123
 
