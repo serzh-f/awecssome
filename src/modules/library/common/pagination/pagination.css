@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  align-items: center;
+
+  &_center {
+    justify-content: center;
+  }
+
+  &_right {
+    justify-content: flex-end;
+  }
+
+  &__link {
+    margin: 0 5px;
+    &:hover {
+      text-decoration: underline;
+    }
+    &_active {
+      color: blue;
+    }
+  }
+
+  &__arrow {
+    font-size: 0; /* Заменить на visually hidden */
+    display: block;
+    &:before {
+      content: '→';
+      display: block;
+      font-size: 20px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+    &_left {
+      transform: rotate(180deg);
+    }
+  }
+
+}

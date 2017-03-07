@@ -27,3 +27,5 @@ import './modules/library/common/product-specifications/__hint/__hint.css';
 import './modules/library/common/news-card/news-card.css';
 import './modules/library/common/news-card/_vertical/_vertical.css';
 import './modules/library/common/news-card/_right-img/_right-img.css';
+
+import './modules/library/common/pagination/pagination.css';
