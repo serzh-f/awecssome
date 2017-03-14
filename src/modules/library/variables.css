@@ -1,10 +1,18 @@
-/* COLORS */
+/*!* COLORS *!*/
 
-$btn-color: rgb(220, 220, 220);
-$btn-color-hover: rgb(200, 200, 200);
-$btn-color-active: rgb(200, 200, 200);
+/*$btn-color: rgb(220, 220, 220);*/
+/*$btn-color-hover: rgb(200, 200, 200);*/
+/*$btn-color-active: rgb(200, 200, 200);*/
 
-/* TYPOGRAPHY */
+/*!* TYPOGRAPHY *!*/
 
-$font-family: Arial;
-$font-size: 16px;
+/*$font-family: Arial;*/
+/*$font-size: 16px;*/
+
+:root {
+  --red: red;
+}
+
+:root {
+  --black: black;
+}

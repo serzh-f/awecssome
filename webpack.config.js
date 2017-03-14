@@ -1,15 +1,31 @@
 'use strict';
 
+
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const WATCH = process.env.WATCH || false;
+
+/* Plugins */
 const webpack = require('webpack');
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlPlugin = require('html-webpack-plugin');
 var precss = require('precss');
 var autoprefixer = require('autoprefixer');
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
+var cssvariables = require('postcss-css-variables');
+var postcssImport = require('postcss-import');
+var StyleLintPlugin = require('stylelint-webpack-plugin');
+
+
+/* Configuarations Files:
+*  Change this file, if you need other StyleLint configuration
+* */
+var stylelintConfig = require('./stylelint.config');
+
+/* Servered pages */
 var pages = ['index', 'news'];
+
 
 module.exports = {
     entry: {
@@ -58,10 +74,7 @@ module.exports = {
         }, {
             test: /\.css$/,
             // exclude: /node_modules/,
-            loader: ExtractTextPlugin.extract(
-                'style-loader',
-                'css-loader!postcss-loader'
-            )
+            loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
         }, {
             test: /\.(otf|eot|ttf|woff)/,
             loader: 'url-loader?limit=8192?[hash]'
@@ -76,6 +89,17 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin('styles.css', { allChunks: true }),
+        /* Optimize CSS code */
+        new OptimizeCssAssetsPlugin({
+            assetNameRegExp: /\.css$/g,
+            cssProcessor: require('cssnano'),
+            canPrint: false
+        }),
+        new StyleLintPlugin({
+            config: stylelintConfig,
+            context: "./src",
+            files: "**/*.css"
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
@@ -85,10 +109,28 @@ module.exports = {
     eslint: {
         fix: true
     },
-    postcss: function() {
-        return [precss, autoprefixer];
+
+    postcss: function(webpack) {
+        return [
+            postcssImport({ addDependencyTo: webpack }), //Hot reload for postCSSimport
+            // require("postcss-cssnext")({
+            //      browsers: ['last 2 versions', '> 5%']
+            // }),
+            // precss,
+            cssvariables({
+                preserve: true
+            }),
+            autoprefixer,
+        ];
+    },
+
+    csso: {
+        comments: 'first-exclamation',
+        debug: 3,
+        restructure: true
     }
 };
+
 
 for (var i = 0; i < pages.length; i++) {
     module.exports.plugins.push(new HtmlPlugin({
@@ -106,6 +148,7 @@ if (WATCH) {
         server: { baseDir: ['public'] }
     }));
 }
+
 
 if (NODE_ENV == 'production') {
     module.exports.plugins.push(
